@@ -41,13 +41,6 @@ function App() {
     <div>
       <h1>Hello</h1>
       <ColumnsPage columns={columns} setColumns={setColumns}/>
-      {columns.map(column => {
-            return <div style={{border: "1px solid black"}}>
-                <h3>{column.cell}</h3>
-                <h4>{column.color}</h4>
-            </div>
-        })
-    }
     </div>
   )
 }
